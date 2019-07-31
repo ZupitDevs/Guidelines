@@ -80,60 +80,60 @@ happened in your repository.
 
 1. **Make sure your master branch is up-to-date**
 
-  ```
-  git checkout master
-  git pull --rebase
-  ```
+    ```
+    git checkout master
+    git pull --rebase
+    ```
 
 2. **Checkout your local branch**
 
-  ```
-  git checkout <branch>
-   ```
+    ```
+    git checkout <branch>
+    ```
 
 3. **Squash and rebase.**
 
-   Here you `pick` the first commit and `squash` all the others. You
-   can do this interactively:
+    Here you `pick` the first commit and `squash` all the others. You
+    can do this interactively:
 
     ```
     git rebase -i master
-     ```
+    ```
 
     Remember to change your new squashed commit message with a
     meaningful text.
 
 4. **Fast-forward master**
 
-   ```
-   git checkout master
-   git merge <branch>
-   ```
+    ```
+    git checkout master
+    git merge <branch>
+    ```
 
 5. **Push master**
 
-   ```
-   git push origin master
-   ```
+    ```
+    git push origin master
+    ```
 
 ### How to merge a local branch on master - Git Kraken
 
 1. **Make sure your master branch is up-to-date**
-  ```
-  Double click master
-  Click Pull button
-  ```
+    ```
+    Double click master
+    Click Pull button
+    ```
 
 2. **Checkout your local branch**
-   ```
-  Double click <your_branch>
-  ```
+    ```
+    Double click <your_branch>
+    ```
 
 3. **Squash and rebase.**
 
-   Here you `pick` the first commit and `squash` all the others. You
-   can do this interactively:
-     ```
+    Here you `pick` the first commit and `squash` all the others. You
+    can do this interactively:
+    ```
     Select all your local commits
     Right click --> "Squash <x> commits"
     Right click your branch --> Rebase <your_branch> onto master
@@ -142,15 +142,15 @@ happened in your repository.
     meaningful text.
 
 4. **Fast-forward master**
-   ```
-   Double click master
-   Right click master --> Fast-forward master to <your_branch>
-   ```
+    ```
+    Double click master
+    Right click master --> Fast-forward master to <your_branch>
+    ```
 
 5. **Push master**
-   ```
-   Click Push button
-   ```
+    ```
+    Click Push button
+    ```
 
 ------------
 
