@@ -110,15 +110,15 @@ happened in your repository.
 
 ### Create release branches and tags
 
-    ```
-    git checkout master
-    git pull --rebase
-    git checkout -b 'Sprint-19.12'
-    git tag -a "Sprint-19.12" -m "Release after sprint 19.12"
-    git push origin Sprint-19.12
-    git push --all
-    ```
-
+   ```
+   git checkout master
+   git pull --rebase
+   git checkout -b 'Sprint-19.12'
+   git tag -a "Sprint-19.12" -m "Release after sprint 19.12"
+   git push origin Sprint-19.12
+   git push --all
+   ```
+   
 ### Release features and bugfixes
 
 1. Fix the bug or implement the feature as normal, put it on `master`.
