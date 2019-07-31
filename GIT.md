@@ -63,24 +63,24 @@ happened in your repository.
 
 ### Create a new branch
 
-    ```
-    git checkout -b <branch>
-    ```
+  ```
+  git checkout -b <branch>
+  ```
 
 ### How to merge a local branch on master
 
 1. **Make sure your master branch is up-to-date**
 
-    ```
-    git checkout master
-    git pull --rebase
-    ```
+  ```
+  git checkout master
+  git pull --rebase
+  ```
 
 2. **Checkout your local branch**
 
-    ```
-    git checkout <branch>
-    ```
+  ```
+  git checkout <branch>
+  ```
 
 3. **Squash and rebase.**
 
