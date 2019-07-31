@@ -114,7 +114,7 @@ happened in your repository.
    git checkout master
    git pull --rebase
    git checkout -b 'Sprint-19.12'
-   git tag -a "Sprint-19.12" -m "Release after sprint 19.12"
+   git tag -a "RelSprint-19.12" -m "Release after sprint 19.12"
    git push origin Sprint-19.12
    git push --all
    ```
