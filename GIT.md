@@ -13,7 +13,9 @@ should:
 
 ### Do's
 
-- Use rebasing when pulling (`git pull --rebase`)
+- Use rebasing when pulling
+      Command line --> `git pull --rebase`
+      GitKraken         --> Select the "Pull" menu and then select "Pull (rebase)"
 
 - Use clear and exhaustive commit messages, with the story code as
   title
@@ -61,13 +63,20 @@ happened in your repository.
   branch starting from `master` with a valid name (e.g. `sprint-1904`
   or `release-20190403`)
 
-### Create a new branch
+### Create a new branch - Command Line
 
   ```
   git checkout -b <branch>
   ```
+### Create a new branch - Git Kraken
+  ```
+   Click Branch button
+  ```
 
-### How to merge a local branch on master
+------------
+
+
+### How to merge a local branch on master - Command Line
 
 1. **Make sure your master branch is up-to-date**
 
@@ -80,7 +89,7 @@ happened in your repository.
 
   ```
   git checkout <branch>
-  ```
+   ```
 
 3. **Squash and rebase.**
 
@@ -89,7 +98,7 @@ happened in your repository.
 
     ```
     git rebase -i master
-    ```
+     ```
 
     Remember to change your new squashed commit message with a
     meaningful text.
@@ -107,8 +116,46 @@ happened in your repository.
    git push origin master
    ```
 
+### How to merge a local branch on master - Git Kraken
 
-### Create release branches and tags
+1. **Make sure your master branch is up-to-date**
+  ```
+  Double click master
+  Click Pull button
+  ```
+
+2. **Checkout your local branch**
+   ```
+  Double click <your_branch>
+  ```
+
+3. **Squash and rebase.**
+
+   Here you `pick` the first commit and `squash` all the others. You
+   can do this interactively:
+     ```
+    Select all your local commits
+    Right click --> "Squash <x> commits"
+    Right click your branch --> Rebase <your_branch> onto master
+    ```
+    Remember to change your new squashed commit message with a
+    meaningful text.
+
+4. **Fast-forward master**
+   ```
+   Double click master
+   Right click master --> Fast-forward master to <your_branch>
+   ```
+
+5. **Push master**
+   ```
+   Click Push button
+   ```
+
+------------
+
+
+### Create release branches and tags - Command Line
 
    ```
    git checkout master
@@ -119,9 +166,24 @@ happened in your repository.
    git push --all
    ```
    
-### Release features and bugfixes
 
-1. Fix the bug or implement the feature as normal, put it on `master`.
+### Create release branches and tags - Git Kraken
+   ```
+   Double click master
+   Click Pull button
+   Click Branch button --> 'Sprint-19.12'
+   Right click <new_branch> --> Create annotated tag here
+       Name --> 'RelSprint-19.12'
+       Annotation message --> 'Release after sprint 19.12'
+   Click Push button
+   ```
+
+------------
+
+
+### Release features and bugfixes - Command Line
+
+1. Fix the bug or implement the feature as normal and put it on `master`.
 
 2. Checkout the current release/sprint branch
 
@@ -140,4 +202,28 @@ happened in your repository.
 
    ```
    git push origin Sprint-19.12
+   ```
+
+### Release features and bugfixes - Git Kraken
+
+1. Fix the bug or implement the feature as normal and put it on `master`.
+
+2. Checkout the current release/sprint branch
+
+   ```
+   Double click <sprint_branch>
+   ```
+
+3. Cherry pick the commit in to the branch
+
+   ```
+   Right click the commit you wanna cherrypick
+   Click "Cherrypick commit"
+   "Do you want to immediately commit the cherrypicked changes?" --> Yes
+   ```
+
+4. Push & deploy!
+
+   ```
+   Click Push button
    ```
