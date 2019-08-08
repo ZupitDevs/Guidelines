@@ -102,6 +102,8 @@ happened in your repository.
 
     Remember to change your new squashed commit message with a
     meaningful text.
+    - First row: StoryId + Mini description
+    - From the second row: complete description  
 
 4. **Fast-forward master**
 
@@ -140,6 +142,8 @@ happened in your repository.
     ```
     Remember to change your new squashed commit message with a
     meaningful text.
+    - Summary: StoryId + Mini description
+    - Description: complete description
 
 4. **Fast-forward master**
     ```
