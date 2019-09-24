@@ -239,7 +239,7 @@ When you are working on a really long feature, maybe with other developers, the 
 Rebasing on a shared branch is prohibited and you do not want to lose every intermediate commit.
 The solution is using long living branches.
 
-1. Create a branch named "LLB-<feature-name>"
+1. Create a branch named "LLB-|feature-name|"
 
 2. When you pull the branch from remote you still have to use the rebase mode.
 
