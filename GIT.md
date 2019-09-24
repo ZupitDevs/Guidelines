@@ -28,15 +28,14 @@ should:
 
 - Use local commits as *checkpoints* during your workflow
 
-- Push on origin private branches as backup if working on a long
-  story.
+- Push on origin private branches as backup at the end of the day.
 
 ### Dont's
 
 - Don't use git branches for environment configuration (e.g. branch
   `env-prod` and `env-staging` with different configuration files)
 
-- Avoid merges when possible
+- Avoid merges when possible (allowed in long living branches)
 
 - Don't break the **golden rule**
 
@@ -231,3 +230,19 @@ happened in your repository.
    ```
    Click Push button
    ```
+
+## Exceptions
+
+### Long Living Branches
+
+When you are working on a really long feature, maybe with other developers, the general workflow method is not applicable.
+Rebasing on a shared branch is prohibited and you do not want to lose every intermediate commit.
+The solution is using long living branches.
+
+1. Create a branch named "LLB-<feature-name>"
+
+2. When you pull the branch from remote you still have to use the rebase mode.
+
+3. When you want to get the latest commits from master, use merge instead of rebase.
+
+4. When the really long feature is ready and stable merge it into master (Not rebase!). 
