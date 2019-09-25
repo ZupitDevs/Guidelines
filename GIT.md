@@ -14,8 +14,9 @@ should:
 ### Do's
 
 - Use rebasing when pulling
-      Command line --> `git pull --rebase`
-      GitKraken         --> Select the "Pull" menu and then select "Pull (rebase)"
+  * Command line: `git pull --rebase`
+            
+  * GitKraken: Select the "Pull" menu and then select "Pull (rebase)"
 
 - Use clear and exhaustive commit messages, with the story code as
   title
