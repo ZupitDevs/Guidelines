@@ -22,7 +22,7 @@ should:
   title
 
   ```
-  ZUPIT-01 Add feature XYZ
+  ZUPIT-01: Add feature XYZ
   ```
 
   Use the following commit message syntax: https://chris.beams.io/posts/git-commit/
