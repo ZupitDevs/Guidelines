@@ -22,10 +22,10 @@ should:
   title
 
   ```
-  [ZUPIT-01]
-
-  This is the first commit of Zupit!
+  ZUPIT-01 Add feature XYZ
   ```
+
+  Use the following commit message syntax: https://chris.beams.io/posts/git-commit/
 
 - Use local commits as *checkpoints* during your workflow
 
